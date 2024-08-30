@@ -214,6 +214,9 @@ void DS_Start(HWND hwnd)
 
 		DS_SetOutputFormat();
 	}
+	else {
+		S_ExitSystem("DS_Start: DirectSoundCreate8 failed");
+	}
 }
 
 void DS_Finish()
